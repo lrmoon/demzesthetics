@@ -111,35 +111,74 @@
     banner -->
     <!--=================================
     About us -->
-    <section class="about space-pt">
+    <section class="space-ptb about-02 mb-0 mb-lg-5">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="section-title">
-              <span class="sub-title">Whay chose Us</span>
-              <h2 class="title">Who we are and what we do</h2>                
-            </div>
-            <div class="about-img pt-0 pt-lg-4">
-              <img class="img-fluid" src="{% static 'images/about/about-01.jpg' %}" alt="#">
-            </div>
-          </div>
-          <div class="col-lg-6 position-relative">
-            <div class="about-right mt-5 mt-lg-0">
-              <div class="circle">
-                <div class="logo">
-                  10
-                </div>
-                <div class="text">
-                  <p>
-                    10 Years of Experiense in Spa -
-                  </p>
+        <div class="row align-items-center">
+          <div class="col-md-12 col-lg-6">
+            <div class="about-img">
+              <div class="img-01">
+                <img class="img-fluid" src="{% static 'images/about/about-04.jpg' %}" alt="">
+              </div>
+              <div class="experiense-counter">
+                <div class="circle">
+                  <div class="logo">
+                    10
+                  </div>
+                  <div class="text">
+                    <p>
+                      10 Years of Experience in Beauty -
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="about-img text-end">
-                <img class="img-fluid" src="{% static 'images/about/about1-02.jpg' %}" alt="about1">
-              </div>                
-              <p class="mt-3">We know this in our gut, but what can we do about it? How can we motivate ourselves? One of the most difficult aspects of achieving success is staying motivated over the long haul.</p>
-              <a href="about-us.html" class="btn btn-lg btn-primary  mt-2">Discover More</a>
+              <div class="img-03">
+                <img class="img-fluid" src="{% static 'images/about/about-05.jpg' %}" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6 pt-5 pt-lg-0 px-3 px-xl-5">
+            <div class="section-title pt-5 pt-lg-0 mb-4">
+              <span class="sub-title">Whay chose Us</span>
+              <h2 class="title">Who we are and what we do</h2>
+            </div>
+            <div class="description mb-4 mb-md-5">
+              <p>I truly believe Augustine’s words are true and if you look at history you know it is true. 
+                There are many people in the world with amazing talents who realize only a small percentage of their potential.</p>
+              <p>Positive pleasure-oriented goals are much more powerful motivators than negative fear-based ones.</p>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 mb-3 mb-sm-0">
+                <ul class="list">
+                  <li><i class="fa fa-check"></i>Give yourself the power.</li>
+                  <li><i class="fa fa-check"></i>Remind yourself the only.</li>
+                  <li><i class="fa fa-check"></i>It really comes down to.</li>
+                </ul>
+              </div>
+              <div class="col-sm-6">
+                <ul class="list">
+                  <li><i class="fa fa-check"></i>Introspection is the trick.</li>
+                  <li><i class="fa fa-check"></i>Trying to go through life</li>
+                  <li><i class="fa fa-check"></i>You will drift aimlessly</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row mt-4 mt-md-5">
+              <div class="col-sm-6 col-md-3 col-lg-4">
+                <div class="author-signature">
+                  <img class="img-fluid" src="{% static 'images/signature.png' %}" alt="signature">
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-8 mt-4 mt-sm-0">
+                <div class="call-box">
+                  <div class="call-box-icon">
+                    <i class="fa fa-phone me-2 fa fa-flip-horizontal"></i>
+                  </div>
+                  <div class="call-box-content">
+                    <p>Have any questions? Give us a call</p>
+                    <span>(123) 345-6789</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -165,7 +204,7 @@
               <div class="item">
                 <div class="category-box">
                   <div class="category-img">
-                    <img class="img-fluid" src="{% static 'images/category/category-01.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static 'images/category/category_01.jpg' %}" alt="">
                   </div>
                   <div class="category-title text-center mt-4">
                     <h4><a href="service-detail.html">Stone Massage</a></h4>
@@ -236,7 +275,7 @@
             <div class="feature-box mb-4">
               <div class="feature-title-icon">
                 <div class="feature-icon me-3">
-                  <img class="img-fluid" src="images/icon/hot-stones.png" alt="hot-stones">
+                  <img class="img-fluid" src="{% static 'images/icon/hot-stones.png' %}" alt="hot-stones">
                 </div>
                 <h3 class="text-white">Hot stones</h3>
               </div>
@@ -247,7 +286,7 @@
             <div class="feature-box mb-4">
               <div class="feature-title-icon">
                 <div class="feature-icon me-3">
-                  <img class="img-fluid" src="images/icon/relaxation.png" alt="relaxation">
+                  <img class="img-fluid" src="{% static 'images/icon/relaxation.png' %}" alt="relaxation">
                 </div>
                 <h3 class="text-white">Relaxation</h3>
               </div>
@@ -258,7 +297,7 @@
             <div class="feature-box">
               <div class="feature-title-icon">
                 <div class="feature-icon me-3">
-                  <img class="img-fluid" src="images/icon/thai.png" alt="thai">
+                  <img class="img-fluid" src="{% static 'images/icon/thai.png' %}" alt="thai">
                 </div>
                 <h3 class="text-white">Thai</h3>
               </div>
@@ -289,7 +328,7 @@
           <div class="col-md-12 col-lg-6 mt-4">
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/body-massage.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/body-massage.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -305,7 +344,7 @@
             </div>
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/face-masks.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/face-masks.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -321,7 +360,7 @@
             </div>
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/nail-treatments.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/nail-treatments.png'%}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -337,7 +376,7 @@
             </div>
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/aroma-therapy.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/aroma-therapy.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -355,7 +394,7 @@
           <div class="col-md-12 col-lg-6 mt-5 mt-lg-4">
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/skincare.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/skincare.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -371,7 +410,7 @@
             </div>
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/relaxation.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/relaxation.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -387,7 +426,7 @@
             </div>
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/medical-treatments.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/medical-treatments.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -403,7 +442,7 @@
             </div>
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/face-treatments.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/face-treatments.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -425,19 +464,7 @@
     Menu list -->
     <!--=================================
     Video banner -->
-    <section class="space-ptb video-section bg-holder" style="background-image: url(./images/bg/video-bg.jpg);">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 mt-5">
-            <div class="section-title text-center">
-              <a class="btn-icon btn-lg bg-primary rounded-circle btn-animation popup-youtube" href="https://www.youtube.com/watch?v=rGtcmKIZi5c"><i class="fas fa-play text-white fa-xs"></i></a>
-              <h2 class="title text-white mt-5">Health And Relaxation</h2>
-              <p class="section-description text-white">Introspection is the trick. Understand what you want, why you want it and what it will do for you. This is a critical factor, and as such, is probably the most difficult step.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
     <!--=================================
     Video banner -->
     <!--=================================

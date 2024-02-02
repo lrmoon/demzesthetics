@@ -3,118 +3,8 @@
 {% load sass_tags %}
 
  {% block content%}
-    <!--=================================
     
-    
-    <!--=================================
-    Header -->
-    <header class="header header-transparent header-sticky">
-      <nav class="navbar navbar-static-top navbar-expand-lg">
-        <div class="container-fluid main-header position-relative">
-          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"><i class="fas fa-align-left"></i></button>
-          <a class="logo-left navbar-brand" href="index.html">
-            <img class="img-fluid" src="{% static './images/logo.svg' %}" alt="logo">
-            <img class="img-fluid sticky" src="{% static './images/logo-dark.svg' %}" alt="logo">
-          </a>
-           <a class="btn btn-sm menu-btn" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">  
-             <svg width="40" height="80" viewBox="0 0 80 80" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.3333 60H33.3333" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-              <path d="M13.3333 40H53.3333" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-              <path d="M13.3333 20H66.6666" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-             </svg> 
-            </a>
-          <div class="navbar-collapse collapse justify-content-end justify-content-lg-center">
-            <ul class="nav navbar-nav">
-              <li class="nav-item dropdown active">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home<i class="fa-solid fa-plus"></i></a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="index.html"><span>Home 01</span></a></li>
-                  <li class="active"><a class="dropdown-item" href="index-02.html"><span>Home 02</span></a></li>
-                  <li><a class="dropdown-item" href="index-shop.html"><span>Home shop</span></a></li>
-                </ul>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="about-us.html"><span>About us</span></a></li>              
-              <li class="dropdown nav-item">
-                <a class="nav-link" href="javascript:void(0)" data-bs-toggle="dropdown">Pages<i class="fa-solid fa-plus"></i></a>
-                <ul class="dropdown-menu megamenu dropdown-menu-lg">
-                  <li>
-                    <div class="row">
-                      <div class="col-sm-6 col-md-3">
-                        <h6 class="mb-0 mt-lg-2 nav-title text-primary">Pages</h6>
-                        <ul class="list-unstyled mt-lg-3"> 
-                          <li><a class="dropdown-item" href="about-us.html"><span>About us</span></a></li>
-                          <li><a class="dropdown-item" href="service.html"><span>Service</span></a></li>
-                          <li><a class="dropdown-item" href="service-detail.html"><span>Service Detail</span></a></li>
-                          <li><a class="dropdown-item" href="gallery.html"><span>Gallery</span></a></li>                          
-                        </ul>
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                        <h6 class="mb-0 mt-lg-2 nav-title text-primary">Pages</h6>
-                        <ul class="list-unstyled mt-lg-3">
-                          <li><a class="dropdown-item" href="appointment.html"><span>Appointment</span></a></li>
-                          <li><a class="dropdown-item" href="packages.html"><span>Packages</span></a></li>
-                          <li><a class="dropdown-item" href="menu.html"><span>Menu</span></a></li>
-                          <li><a class="dropdown-item" href="team.html"><span>Team</span></a></li>
-                        </ul>
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                        <h6 class="mb-0 mt-lg-2 nav-title text-primary">Pages</h6>
-                        <ul class="list-unstyled mt-lg-3">
-                          <li><a class="dropdown-item" href="team-single.html"><span>Team Single</span></a></li>
-                          <li><a class="dropdown-item" href="error-404.html"><span>Error 404</span></a></li>
-                          <li><a class="dropdown-item" href="coming-soon.html"><span>Coming soon</span></a></li>
-                          <li><a class="dropdown-item" href="faq.html"><span>Faq</span></a></li>
-                        </ul>
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                        <h6 class="mb-0 mt-lg-2 nav-title text-primary">Pages</h6>
-                        <ul class="list-unstyled mt-lg-3">
-                          <li><a class="dropdown-item" href="privacy-policy.html"><span>Privacy Policy</span></a></li>
-                          <li><a class="dropdown-item" href="terms-and-conditions.html"><span>Terms And Conditions</span></a></li>
-                          <li><a class="dropdown-item" href="login.html"><span>Login</span></a></li>
-                          <li><a class="dropdown-item" href="register.html"><span>Register</span></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-              <li class="logo-center">
-                <a class="navbar-brand" href="index.html">
-                  <img class="img-fluid" src="{% static 'images/logo.svg' %}" alt="logo">
-                  <img class="img-fluid sticky" src="{% static 'images/logo-dark.svg' %}" alt="logo">
-                </a>
-              </li>
-              <li class="dropdown nav-item">
-                <a class="nav-link" href="javascript:void(0)" data-bs-toggle="dropdown">Blog<i class="fa-solid fa-plus"></i></a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="blog.html"><span>Blog</span></a></li>
-                  <li><a class="dropdown-item" href="blog-grid.html"><span>Blog Grid</span></a></li>
-                  <li><a class="dropdown-item" href="blog-single.html"><span>Blog Single</span></a></li>
-                </ul>
-              </li>
-              <li class="dropdown nav-item">
-                <a class="nav-link" href="javascript:void(0)" data-bs-toggle="dropdown">Shop<i class="fa-solid fa-plus"></i></a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="shop.html"><span>Shop</span></a></li>
-                  <li><a class="dropdown-item" href="shop-single.html"><span>Shop Single</span></a></li>
-                  <li><a class="dropdown-item" href="cart.html"><span>Cart</span></a></li>
-                  <li><a class="dropdown-item" href="checkout.html"><span>Checkout</span></a></li>
-                </ul>
-              </li>
-              <li><a class="nav-link" href="contact-us.html"><span>Contact us</span></a></li>
-            </ul>
-          </div>
-          <div class="add-listing">
-            <a class="btn btn-primary ms-4" href="appointment.html">Book Now</a>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!--=================================
-    Header -->
-    <!--=================================
-    Search -->
+ 
     <div id="search">
       <button type="button" class="close">×</button>
       <form>
@@ -183,7 +73,7 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide align-items-center d-flex" style="background-image: url(images/slider/home-02/banner-03.jpg); background-size: cover; background-position: center center;">
+          <div class="swiper-slide align-items-center d-flex"  id="banner3" style="background-image: url(../images/slider/home-02/banner-03.jpg) !important; background-size: cover; background-position: center center;">
             <div class="swipeinner container">
               <div class="row text-left">
                 <div class="col-12 col-sm-10 col-md-8 col-lg-6">
@@ -218,7 +108,7 @@
           <div class="col-md-12 col-lg-6">
             <div class="about-img">
               <div class="img-01">
-                <img class="img-fluid" src="images/about/about-04.jpg" alt="">
+                <img class="img-fluid" src="{% static 'images/about/about-04.jpg' %}" alt="">
               </div>
               <div class="experiense-counter">
                 <div class="circle">
@@ -227,13 +117,13 @@
                   </div>
                   <div class="text">
                     <p>
-                      10 Years of Experiense in Spa -
+                      10 Years of Experience in Beauty -
                     </p>
                   </div>
                 </div>
               </div>
               <div class="img-03">
-                <img class="img-fluid" src="images/about/about-05.jpg" alt="">
+                <img class="img-fluid" src="{% static 'images/about/about-05.jpg' %}" alt="">
               </div>
             </div>
           </div>
@@ -266,7 +156,7 @@
             <div class="row mt-4 mt-md-5">
               <div class="col-sm-6 col-md-3 col-lg-4">
                 <div class="author-signature">
-                  <img class="img-fluid" src="images/signature.png" alt="signature">
+                  <img class="img-fluid" src="{% static 'images/signature.png' %}" alt="signature">
                 </div>
               </div>
               <div class="col-sm-6 col-md-8 mt-4 mt-sm-0">
@@ -363,7 +253,7 @@
           <div class="col-md-12 col-lg-6 mt-4">
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/body-massage.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/body-massage.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -379,7 +269,7 @@
             </div>
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/face-masks.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/face-masks.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -395,7 +285,7 @@
             </div>
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/nail-treatments.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/nail-treatments.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -411,7 +301,7 @@
             </div>
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/aroma-therapy.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/aroma-therapy.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -429,7 +319,7 @@
           <div class="col-md-12 col-lg-6 mt-5 mt-lg-4">
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/skincare.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/skincare.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -445,7 +335,7 @@
             </div>
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/relaxation.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/relaxation.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -461,7 +351,7 @@
             </div>
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/medical-treatments.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/medical-treatments.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -477,7 +367,7 @@
             </div>
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="images/menu/face-treatments.png" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/face-treatments.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
@@ -562,60 +452,7 @@
     <!--=================================
     Gallery -->
     <!--=================================
-    Make Appointment BG -->
-    <section class="space-ptb" style="background-image: url(./images/bg/bg-img-02.jpg); background-repeat: no-repeat; background-size: cover; background-position: left;">
-      <div class="container">
-        <div class="row justify-content-end">
-          <div class="col-lg-7">
-            <div class="bg-primary p-4 p-md-5">
-              <div class="section-title">
-                <h2 class="title text-white">Make Appointment</h2>
-                <p class="section-description text-white">We also know those epic stories, those modern-day legends surrounding the early failures of such supremely successful folks as Michael Jordan and Bill Gates.</p>
-              </div>
-              <form class="appointment-form">
-                <div class="row">
-                  <div class="mb-3 col-md-6">
-                    <input type="text" class="form-control" id="InputFullName" placeholder="Full Name">
-                  </div>
-                  <div class="mb-3 col-md-6">
-                    <input type="email" class="form-control" id="InputEmail" placeholder="Your Email">
-                  </div>
-                  <div class="mb-3 col-md-6">
-                    <input type="text" class="form-control" id="InputPhone" placeholder="Phone Number">
-                  </div>
-                  <div class="form-group select-border col-md-6 ">
-                    <select class="form-control basic-select" id="city">
-                      <option value="City">Select Subject</option>
-                      <option value="New york">New york</option>
-                      <option value="Los Angeles">Los angeles</option>
-                      <option value="Chicago">Chicago</option>
-                      <option value="Assam">Mumbai</option>
-                      <option value="Assam">Delhi</option>
-                    </select>
-                  </div>
-                  <div class="mb-3 col-md-12 datetimepickers">
-                    <div class="input-group date" id="datetimepicker-01" data-target-input="nearest">
-                      <input type="text" class="form-control datetimepicker-input" placeholder="Date" data-target="#datetimepicker-01">
-                      <div class="input-group-append" data-target="#datetimepicker-01" data-toggle="datetimepicker">
-                        <div class="input-group-text h-100"><i class="far fa-calendar-alt"></i></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mb-3 col-md-12">
-                    <textarea class="form-control" id="InputComment" rows="3" placeholder="Comment"></textarea>
-                  </div>
-                  <div class="d-flex">
-                    <a href="#" class="btn btn-secondary btn-secondary-white mt-4">Make Appointment<i class="fas fa-arrow-right ms-2"></i></a>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--=================================
-    Make Appointment BG -->
+    
     <!--=================================
     Pricing Plan -->
     <section class="space-ptb position-relative">
@@ -682,6 +519,69 @@
     </section>
     <!--=================================
     Pricing Plan -->
+    <!--Team -->
+    <section class="space-ptb position-relative">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="section-title text-center">
+              <span class="sub-title">Team</span>
+              <h2 class="title">Our Happy Team</h2>
+              <p class="section-description">So, how can we stay on course with all the distractions in our lives? Willpower is a good start, but it’s very difficult to stay on track simply through willpower.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+            <div class="team">
+              <div class="team-img">
+                <img class="img-fluid" src="{% static 'images/team/01.jpg' %}" alt="">
+              </div>
+              <div class="team-content">
+                <p class="team-description">Founder</p>
+                <h5 class="team-name"><a href="team-single.html">Sophia Glover</a></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+            <div class="team">
+              <div class="team-img">
+                <img class="img-fluid" src="{% static 'images/team/02.jpg' %}" alt="">
+              </div>
+              <div class="team-content">
+                <p class="team-description">CEO</p>
+                <h5 class="team-name"><a href="team-single.html">Candice Mcdonald</a></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0">
+            <div class="team">
+              <div class="team-img">
+                <img class="img-fluid" src="images/team/03.jpg" alt="">
+              </div>
+              <div class="team-content">
+                <p class="team-description">Co-Founder</p>
+                <h5 class="team-name"><a href="team-single.html">Glenda Tran</a></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="team">
+              <div class="team-img">
+                <img class="img-fluid" src="images/team/04.jpg" alt="">
+              </div>
+              <div class="team-content">
+                <p class="team-description">Facewash Expert</p>
+                <h5 class="team-name"><a href="team-single.html">Maria Fields</a></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=================================
+    Team -->
+    
     <!--=================================
     Shop Banner -->
     <section class="space-ptb" style="background-image: url(images/bg/shop-banner.jpg); background-size: cover; background-repeat: no-repeat;">
