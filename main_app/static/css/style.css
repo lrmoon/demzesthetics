@@ -32,6 +32,11 @@
 #nav{
   padding-top: 0 !important;
 }
+
+.smaller-image {
+  width: auto/2; /* Adjust the width as needed */
+  height: auto/2; /* Maintain aspect ratio */
+}
 /*
 
 Template: LuxurySpa - Spa & Beauty HTML Template
@@ -3808,7 +3813,10 @@ ul.list.list-circle li i {
     color: #F2A68D; }
 
 .header .main-header {
+  margin-bottom: -130px;
+  margin-top: -20px;
   padding: 0 50px; }
+  
   .header .main-header .menu-btn {
     background: 0;
     padding-left: 0;
@@ -3921,6 +3929,7 @@ ul.list.list-circle li i {
 
 /* Header Sticky */
 .header.is-sticky {
+  
   position: fixed;
   top: 0;
   z-index: 99;
