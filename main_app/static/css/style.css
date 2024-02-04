@@ -1,4 +1,7 @@
-
+.logo-dark{
+  height: 300px;
+  width:auto;
+}
 #main-banner{
    background-image: url(../images/headbanner.webp) !important;
    background-size: cover; 

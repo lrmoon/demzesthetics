@@ -8,4 +8,4 @@ def index2(request):
     return render(request, 'index.html')
 
 def team(request):
-    return render(request, 'team-single.html')
+    return render(request, './pages/team.html')
