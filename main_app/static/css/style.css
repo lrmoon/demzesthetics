@@ -1,12 +1,14 @@
 
 #main-banner{
-   background-image: url(../images/banner-02.jpg) !important;
+   background-image: url(../images/headbanner.webp) !important;
    background-size: cover; 
    background-position: center center;
+   opacity: 0.9;
 }
 #main-banner1{
-  background-image: url(../images/02.jpg) !important; 
+  background-image: url(../images/banner7.webp) !important; 
   background-size: cover;
+  opacity: 0.7;
 }
 
 #features{
@@ -19,6 +21,16 @@
   background-size: cover; 
   background-position: center center;
   
+}
+
+#logo{
+  width: auto;
+  height: 300px;
+  background-color: white !important;
+}
+
+#nav{
+  padding-top: 0 !important;
 }
 /*
 
@@ -3802,7 +3814,7 @@ ul.list.list-circle li i {
     padding-left: 0;
     padding-right: 10px; }
     .header .main-header .menu-btn img {
-      height: 40px; }
+      height: 0px; }
   .header .main-header .add-listing .menu-btn {
     padding-right: 0px; }
 
@@ -3894,8 +3906,11 @@ ul.list.list-circle li i {
   -webkit-transition: none;
   transition: none; }
   .header .navbar-brand img {
-    height: 70px; }
+    width: auto;
+    height: 300px; }
     .header .navbar-brand img.sticky {
+      width: auto;
+      height: 300px;
       display: none; }
 
 .header .navbar .navbar-nav li.active .nav-link {
@@ -3921,9 +3936,12 @@ ul.list.list-circle li i {
   .header.is-sticky .navbar .navbar-brand {
     padding: 12px 0px; }
     .header.is-sticky .navbar .navbar-brand img {
-      height: 50px;
+      height: 300px;
+        width: auto;
       display: none; }
       .header.is-sticky .navbar .navbar-brand img.sticky {
+        height: 300px;
+        width: auto;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }

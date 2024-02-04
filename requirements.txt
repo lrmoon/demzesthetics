@@ -2,6 +2,8 @@ ansicolors==1.1.8
 asgiref==3.7.2
 Brotli==1.1.0
 configparser==6.0.0
+css==0.1
+cssutils==2.9.0
 Django==3.2.1
 django-appconf==1.0.6
 django-compressor==4.4
@@ -15,6 +17,7 @@ gunicorn==21.2.0
 libsass==0.23.0
 packaging==23.2
 psutil==5.9.8
+pynliner==0.8.0
 pytz==2024.1
 rcssmin==1.1.1
 rjsmin==1.2.1
@@ -22,4 +25,5 @@ six==1.16.0
 sqlparse==0.4.2
 tini==3.0.1
 typing_extensions==4.9.0
+utils==1.0.2
 whitenoise==6.6.0
