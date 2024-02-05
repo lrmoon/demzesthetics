@@ -1,7 +1,21 @@
 .logo-dark{
   height: 300px;
-  width:auto;
+  width:300px;
 }
+
+/* Remove shadow outline for pagination buttons */
+.owl-stage-outer { 
+  overflow: visible;
+  }
+  
+   .owl-item {
+     opacity: 0;
+     transition: opacity 500ms;
+  }
+  .owl-item.active {
+    opacity: 1;
+  }
+
 #main-banner{
    background-image: url(../images/headbanner.webp) !important;
    background-size: cover; 
@@ -2244,6 +2258,7 @@ button {
   .btn.btn-secondary.btn-secondary-white:active {
     -webkit-box-shadow: none;
             box-shadow: none;
+            position:relative;
     outline: none;
     color: #ffffff;
     background: #131310; }

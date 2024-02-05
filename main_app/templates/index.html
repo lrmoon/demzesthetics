@@ -5,17 +5,12 @@
 {% load sass_tags %}
 
 
+
 {% block content %}
+
 
   <body>
     
-    <!--=================================
-    preloader -->
-    {% comment %} <div id="pre-loader">
-      <img src="{% static 'images/pre-loader/loader-01.svg' %}" alt="">
-    </div> {% endcomment %}
-    <!--=================================
-    preloader -->
     
     
    
@@ -64,8 +59,8 @@
         </div>
       </div>
       <!-- Pagination -->
-      <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></div>
-      <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"><i class="fas fa-chevron-right"></i></div>
+      <div class="swiper-button-prev pagination page-link" tabindex="0" role="button" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></div>
+      <div class="swiper-button-next pagination page-link" tabindex="0" role="button" aria-label="Next slide"><i class="fas fa-chevron-right"></i></div>
     </section>
     <!--=================================
     banner -->
@@ -203,7 +198,7 @@
               <div class="feature-content">
                 <h3 class="text-white">Facial Message</h3>
                 <p class="mb-4 text-white">Give yourself the power of responsibility. Remind yourself the only thing stopping you is yourself.</p>
-                <a href="appointment.html">Make Appointment<i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="https://demz-esthetics.square.site/s/appointments">Make Appointment<i class="fas fa-arrow-right ms-2"></i></a>
               </div>
             </div>
           </div>
@@ -501,7 +496,7 @@
                         <span class="text-primary">Relax massage</span>
                       </div>
                       <div class="avatar">
-                        <img class="img-fluid" src="images/testimonial/04.jpg" alt="">
+                        <img class="img-fluid" src="{% static 'images/testimonial/04.jpg' %}" alt="">
                       </div>
                     </div>
                   </div>
@@ -512,12 +507,33 @@
         </div>
       </div>
     </section>
-    <!--=================================
-    Testimonial -->
-    <!--=================================
-    blog post -->
+    <script>
+      $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsiveClass: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:5
+                }
+            }
+        });
+    });
+  </script>
+    <!----line break-->
+     <!-- Testimonial -->
+   <!-- line break-->
+      <!-- blog post -->
     <section class="space-ptb position-relative">
-      <!-- <img class="img-fluid blog-bg-pattern" src="images/blog/blog-bg.png" alt=""> -->
+       <img class="img-fluid blog-bg-pattern" src="images/blog/blog-bg.png" alt=""> -->
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8">
@@ -601,31 +617,16 @@
         </div>
       </div>
     </section>
-    <!--=================================
-    blog post -->
-    <!--=================================
+    <!---=================-->
+    <!-- blog post -->
     
-    <!--=================================
-    Back To Top-->
+    <!-- Back To Top-->
     <div id="back-to-top" class="back-to-top">
       <a href="#"><i class="fas fa-angle-up"></i></a>
     </div>
-    <!--=================================
-    Back To Top-->
-    <!--=================================
-    Javascript -->
-    <!-- JS Global Compulsory (Do not remove)-->
-    <script src="{%static 'js/jquery-3.7.1.min.js' %}" ></script>
-    <script src="{% static 'js/popper/popper.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}" ></script>
-    <!-- Page JS Implementing Plugins (Remove the plugin script here if site does not use that feature)-->
-    <script src="{% static 'js/owl-carousel/owl.carousel.min.js'%}" ></script>
-    <script src="{% static 'js/swiper/swiper.min.js'%}" defer ></script>
-    <script src="{% static 'js/swiperanimation/SwiperAnimation.min.js'%}"defer></script>
-    <script src="{% static 'js/magnific-popup/jquery.magnific-popup.js'%}"></script>
-    <!-- Template Scripts (Do not remove)-->
-    <script src="{% static 'js/custom.js'%}"></script>
     
+    <!-- JS Global Compulsory (Do not remove)-->
+  
     <script>
       
     </script>
