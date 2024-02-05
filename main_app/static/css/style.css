@@ -17,9 +17,14 @@
    opacity: 0.9;
 }
 #main-banner1{
-  background-image: url(../images/banner7.webp) !important; 
+  background-image: url(../images/banner2.webp) !important; 
   background-size: cover;
-  opacity: 0.7;
+  opacity: 0.9;
+  background-color: black;
+  
+}
+#main-banner1:after{
+  opacity: 0;
 }
 
 #features{
@@ -33,6 +38,13 @@
   background-size: cover;
   background-position: center;
   z-index: auto;
+}
+
+#testimonials{
+  background-image: url(../images/testimonial/testimonial-bg.jpg) !important;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
 }
 
 #banner3{
