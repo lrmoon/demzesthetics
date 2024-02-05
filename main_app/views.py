@@ -9,3 +9,6 @@ def index2(request):
 
 def team(request):
     return render(request, './pages/team.html')
+
+def services(request):
+    return render(request, './pages/service.html')

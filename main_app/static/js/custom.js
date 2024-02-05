@@ -161,7 +161,7 @@ POTENZA.isSticky = function () {
               items: $this.data('sm-items') ? $this.data('sm-items') : 2
             },
             980: {
-              items: $this.data('md-items') ? $this.data('md-items') : 3
+              items: $this.data('md-items') ? $this.data('md-items') : 4
             },
             1200: {
               items: $items

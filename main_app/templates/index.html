@@ -70,7 +70,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="section-title">
-              <span class="sub-title">Whay chose Us</span>
+              <span class="sub-title">Why Chose Us</span>
               <h2 class="title">Who we are and what we do</h2>                
             </div>
             <div class="about-img pt-0 pt-lg-4">
@@ -107,9 +107,9 @@
         <div class="row justify-content-center">
           <div class="col-xl-4 pb-4 pb-xl-0 pe-0 pe-xl-5">
             <div class="section-title">
-              <span class="sub-title">Category</span>
-              <h2 class="title">Selected category from our spa</h2>
-              <p class="section-description">If success is a process with a number of defined steps, then it is just like any other process.</p>
+              <span class="sub-title">Services</span>
+              <h2 class="title">Selected services from our location</h2>
+              <p class="section-description">Beauty starts here. Different services for any approach to your aesthetic.</p>
             </div>
             <a href="service.html" class="btn btn-primary mt-4">More Category</a>
           </div>
@@ -118,27 +118,17 @@
               <div class="item">
                 <div class="category-box">
                   <div class="category-img">
-                    <img class="img-fluid" src="{% static 'images/category/category-01.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static './images/category/bodywax.webp' %}" alt="">
                   </div>
                   <div class="category-title text-center mt-4">
-                    <h4><a href="service-detail.html">Stone Massage</a></h4>
+                    <h4><a href="service-detail.html">Body Wax</a></h4>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="category-box">
                   <div class="category-img">
-                    <img class="img-fluid" src="{% static 'images/category/category-02.jpg' %}" alt="">
-                  </div>
-                  <div class="category-title text-center mt-4">
-                    <h4><a href="service-detail.html">Aroma Theraphy</a></h4>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="category-box">
-                  <div class="category-img">
-                    <img class="img-fluid" src="{% static 'images/category/category-03.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static 'images/category/hydrofacial.webp' %}" alt="">
                   </div>
                   <div class="category-title text-center mt-4">
                     <h4><a href="service-detail.html">Facial Care</a></h4>
@@ -148,20 +138,30 @@
               <div class="item">
                 <div class="category-box">
                   <div class="category-img">
-                    <img class="img-fluid" src="{% static 'images/category/category-04.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static 'images/category/facewax.webp' %}" alt="">
                   </div>
                   <div class="category-title text-center mt-4">
-                    <h4><a href="service-detail.html">Finnish Sauna</a></h4>
+                    <h4><a href="service-detail.html">Facial Wax</a></h4>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="category-box">
                   <div class="category-img">
-                    <img class="img-fluid" src="{% static 'images/category/category-05.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static 'images/category/facialwand.webp' %}" alt="">
                   </div>
                   <div class="category-title text-center mt-4">
-                    <h4><a href="service-detail.html">Scrub Massage</a></h4>
+                    <h4><a href="service-detail.html">Specialized Facials</a></h4>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="category-box">
+                  <div class="category-img">
+                    <img class="img-fluid" src="{% static './images/category/wax.webp' %}" alt="">
+                  </div>
+                  <div class="category-title text-center mt-4">
+                    <h4><a href="service-detail.html">Specialized Wax</a></h4>
                   </div>
                 </div>
               </div>
@@ -174,7 +174,7 @@
     Category -->
     <!--=================================
      Features -->
-     <section class="space-ptb bg-overlay-secondary" style="background-image: url(./images/bg/pattern-1.png); background-repeat: no-repeat; background-size: cover; background-position: center; z-index: auto;">
+     <section class="space-ptb bg-overlay-secondary" id="features1">
       <div class="container">
         <div class="row mb-4 pb-3 pb-md-0 mb-md-5 align-items-center">
           <div class="col-12 col-xl-5 col-lg-5">
@@ -193,7 +193,7 @@
           <div class="col-md-4 mb-md-0 mb-4">
             <div class="feature-box feature-box-style-02 mb-4">
               <div class="feature-img">
-                <img src="images/services/01.jpg" alt="services01">
+                <img src="{% static 'images/services/treatment.webp' %}" alt="services01">
               </div>
               <div class="feature-content">
                 <h3 class="text-white">Facial Message</h3>
@@ -205,7 +205,7 @@
           <div class="col-md-4 mb-md-0 mb-4">
             <div class="feature-box feature-box-style-02 mb-4">
               <div class="feature-img">
-                <img src="images/services/02.jpg" alt="services02">
+                <img src="{% static 'images/services/skin1.webp' %}" alt="services02">
               </div>
               <div class="feature-content">
                 <h3 class="text-white">Organic Therapy</h3>
@@ -217,7 +217,7 @@
           <div class="col-md-4">
             <div class="feature-box feature-box-style-02 border-end-0">
               <div class="feature-img">
-                <img src="images/services/03.jpg" alt="services03">
+                <img src="{% static 'images/services/03.jpg' %}" alt="services03">
               </div>
               <div class="feature-content">
                 <h3 class="text-white">Treatments</h3>
@@ -383,10 +383,24 @@
     <!--=================================
     Menu list -->
     <!--=================================
-    Video banner -->
-    
+    Shop Banner -->
+    <section class="space-ptb" id="special-section" style="background-image: url(images/bg/shop-banner.jpg); background-size: cover; background-repeat: no-repeat;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="shop-banner-title text-center">
+              <h2 class="title mb-4 text-white">Our Special Offer</h2>
+              <p class="text-white">We also know those epic stories, those modern-day legends surrounding the early failures of such supremely successful folks as Michael Jordan and Bill Gates. We can look a bit further back in time to Albert Einstein or even further back to Abraham Lincoln.</p>
+              <div class="mt-5">
+                <a href="shop.html" class="btn btn-primary-white btn-primary">Shop Now<i class="fas fa-arrow-right ms-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--=================================
-    Video banner -->
+    Shop Banner -->
     <!--=================================
     Team -->
     <section class="space-ptb position-relative">
@@ -401,7 +415,7 @@
           </div>
         </div>
         <div class="row">
-          <div class=" center col-md-6 col-sm-6 mb-4 mb-lg-0">
+          <div class=" center col-sm-6 mb-4 mb-sm-0">
             <div class="team">
               <div class="team-img">
                 <img class="img-fluid img-thumbnail smaller-image" src="{% static 'images/team/headshot.webp' %}" alt="">
@@ -412,7 +426,7 @@
               </div>
             </div>
           </div>
-          <div class="center col-md-6 mb-4 mb-lg-0">
+          <div class="center col-sm-6 mb-4 mb-sm-0">
             <div class="team">
               <div class="team-img">
                 <img class="img-fluid img-thumbnail smaller-image" src="{% static 'images/team/02.jpg' %}" alt="">
@@ -507,119 +521,11 @@
         </div>
       </div>
     </section>
-    <script>
-      $(document).ready(function(){
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            margin:10,
-            nav:true,
-            responsiveClass: true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:5
-                }
-            }
-        });
-    });
-  </script>
+    
     <!----line break-->
      <!-- Testimonial -->
    <!-- line break-->
-      <!-- blog post -->
-    <section class="space-ptb position-relative">
-       <img class="img-fluid blog-bg-pattern" src="images/blog/blog-bg.png" alt=""> -->
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="section-title text-center">
-              <span class="sub-title">Blog</span>
-              <h2 class="title">Latest News & Blogs</h2>
-              <p class="section-description">Success really has nothing to do with luck, coincidence or fate. It really comes down to understanding the steps in the process and then executing on those steps.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-md-0 mb-4">
-            <div class="blog-post justify-content-center mb-0">
-              <div class="blog-post-image">
-                <img class="img-fluid" src="images/blog/blog-01.jpg" alt="">
-              </div>
-              <div class="blog-post-content">
-                <div class="blog-post-details pb-0">
-                  <div class="blog-post-title">
-                    <h4><a href="blog-single.html">Pressure Points in Massage Therapy</a></h4>
-                  </div>
-                  <div class="mt-3 d-flex">
-                    <a class="btn-link" href="blog-single.html">Read More <i class="fas fa-arrow-right"></i></a>
-                  </div>
-                  <div class="blog-post-time">
-                    <i class="far fa-clock"></i>
-                    <a href="#">February 4, 2021</a>
-                    <i class="far fa-user ps-3"></i>
-                    <a href="#">By admin</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-md-0 mb-4">
-            <div class="blog-post justify-content-center mb-0">
-              <div class="blog-post-image">
-                <img class="img-fluid" src="images/blog/blog-02.jpg" alt="">
-              </div>
-              <div class="blog-post-content">
-                <div class="blog-post-details pb-0">
-                  <div class="blog-post-title">
-                    <h4><a href="blog-single.html">The Benefits of Natural Cosmetics</a></h4>
-                  </div>
-                  <div class="mt-3 d-flex">
-                    <a class="btn-link" href="blog-single.html">Read More <i class="fas fa-arrow-right"></i></a>
-                  </div>
-                  <div class="blog-post-time">
-                    <i class="far fa-clock"></i>
-                    <a href="#">February 4, 2021</a>
-                    <i class="far fa-user ps-3"></i>
-                    <a href="#">By admin</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-md-0 mb-4">
-            <div class="blog-post justify-content-center mb-0">
-              <div class="blog-post-image">
-                <img class="img-fluid" src="images/blog/blog-03.jpg" alt="">
-              </div>
-              <div class="blog-post-content">
-                <div class="blog-post-details pb-0">
-                  <div class="blog-post-title">
-                    <h4><a href="blog-single.html">Speed Cleaning Tips From Cleaners</a></h4>
-                  </div>
-                  <div class="mt-3 d-flex">
-                    <a class="btn-link" href="blog-single.html">Read More <i class="fas fa-arrow-right"></i></a>
-                  </div>
-                  <div class="blog-post-time">
-                    <i class="far fa-clock"></i>
-                    <a href="#">February 4, 2021</a>
-                    <i class="far fa-user ps-3"></i>
-                    <a href="#">By admin</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---=================-->
-    <!-- blog post -->
-    
+      
     <!-- Back To Top-->
     <div id="back-to-top" class="back-to-top">
       <a href="#"><i class="fas fa-angle-up"></i></a>
