@@ -62,7 +62,7 @@
     <!--=================================
     banner -->
     
-    <section class="about space-pt">
+    <section class="about space-pt" id="about">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -99,16 +99,15 @@
     
     <!--About us -->    
     <!--Category --> 
-    <section class="category-section space-ptb position-relative px-md-5">
+    <section class="category-section space-ptb position-relative px-md-5" id="services">
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-xl-4 pb-4 pb-xl-0 pe-0 pe-xl-5">
             <div class="section-title">
               <span class="sub-title">Services</span>
-              <h2 class="title">Selected services from our location</h2>
+              <h2 class="title">Exclusive Aesthetic Treatments.</h2>
               <p class="section-description">Beauty starts here. Different services for any approach to your aesthetic.</p>
             </div>
-            <a href="service.html" class="btn btn-primary mt-4">More Category</a>
           </div>
           <div class="col-xl-8">
             <div class="owl-carousel owl-nav-bottom-center" data-nav-dots="false" data-nav-arrow="false" data-items="4" data-lg-items="3" data-md-items="4" data-sm-items="2" data-xs-items="2" data-space="20" data-autoheight="true">
@@ -148,10 +147,11 @@
                     <img class="img-fluid" src="{% static 'images/category/facialwand.webp' %}" alt="">
                   </div>
                   <div class="category-title text-center mt-4">
-                    <h4><a href="service-detail.html">Specialized Facials</a></h4>
+                    <h4><a href="service-detail.html">Tailored Facials</a></h4>
                   </div>
                 </div>
               </div>
+              
               <div class="item">
                 <div class="category-box">
                   <div class="category-img">
@@ -171,63 +171,66 @@
     Category -->
     <!--=================================
      Features -->
-     <section class="space-ptb bg-overlay-secondary" id="features1">
-      <div class="container">
-        <div class="row mb-4 pb-3 pb-md-0 mb-md-5 align-items-center">
-          <div class="col-12 col-xl-5 col-lg-5">
-            <div class="section-title mb-0">
-              <span class="sub-title text-white">Features</span>
-              <h2 class="title text-white">Amazing Features</h2></div>
-          </div>
-          <div class="col-12 col-xl-5 col-lg-4 pe-xl-5">
-            <div class="section-title mb-0">
-              <p class="section-description text-white">Motivation is not an accident or something that someone else can give you with the power to motivate you.</p>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-3 text-lg-end"><a href="service.html" class="btn btn-primary btn-primary-white">Learn More</a></div>
-        </div>
+     
+    <section class="bg-dark" id="features">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4 mb-md-0 mb-4">
-            <div class="feature-box feature-box-style-02 mb-4">
-              <div class="feature-img">
-                <img src="{% static 'images/services/treatment.webp' %}" alt="services01">
+          <div class="col-xl-6 col-lg-12" id="featuresimg">
+          </div>
+          <div class="col-xl-6 col-lg-12 features-section">
+            <div class="section-title">
+              <span class="sub-title text-white">Aesethic Enhancement</span>
+              <h2 class="title text-white">Custom Aesethics</h2>
+              <p class="section-description text-white">Aesthetic enhancement involves personalized treatments aimed at refining and rejuvenating one's appearance, achieving a more youthful and radiant look through skincare and facial procedures.</p>
+            </div>
+            <div class="feature-box mb-4">
+              <div class="feature-title-icon">
+                <div class="feature-icon me-3">
+                  <img class="img-fluid" src="{% static 'images/icon/hot-stones.png' %}" alt="hot-stones">
+                </div>
+                <h3 class="text-white">Custom Facials</h3>
               </div>
-              <div class="feature-content">
-                <h3 class="text-white">Facial Message</h3>
-                <p class="mb-4 text-white">Give yourself the power of responsibility. Remind yourself the only thing stopping you is yourself.</p>
-                <a href="https://demz-esthetics.square.site/s/appointments">Make Appointment<i class="fas fa-arrow-right ms-2"></i></a>
+              <div class="feature-content text-white">
+                <p>This is where tailored treatments meet your unique skincare needs. Enjoy personalized attention and rejuvenation for a radiant, glowing complexion.</p>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 mb-md-0 mb-4">
-            <div class="feature-box feature-box-style-02 mb-4">
-              <div class="feature-img">
-                <img src="{% static 'images/services/skin1.webp' %}" alt="services02">
+            <div class="feature-box mb-4">
+              <div class="feature-title-icon">
+                <div class="feature-icon me-3">
+                  <img class="img-fluid" src="{% static 'images/icon/relaxation.png' %}" alt="relaxation">
+                </div>
+                <h3 class="text-white">Custom Wax</h3>
               </div>
-              <div class="feature-content">
-                <h3 class="text-white">Organic Therapy</h3>
-                <p class="mb-4 text-white">The best way is to develop and follow a plan. Start with your goals in mind and then work backwards.</p>
-                <a href="appointment.html">Make Appointment<i class="fas fa-arrow-right ms-2"></i></a>
+              <div class="feature-content text-white">
+                <p>Delicately tailored to your preferences, our waxing treatments ensure a silky, hair-free finish, leaving you feeling confident and refreshed.</p>
               </div>
+              
+              <div class="col-md-offset-*">
+
+              <div class="feature-box">
+                <div class="feature-title-icon">
+                  <div class="feature-icon me-3">
+                    <img class="img-fluid" src="{% static 'images/icon/thai.png' %}" alt="thai">
+                  </div>
+                  <h3 class="text-white">Body/Face Dermabrasion</h3>
+                </div>
+                <div class="feature-content text-white">
+                  <p>Experience the rejuvenating power of our Face/Body Dermabrasion. Our gentle exfoliation reveals your natural radiance, leaving you with a smooth and glowing complexion.</p>
+                </div>
+              </div>
+
             </div>
+            
           </div>
-          <div class="col-md-4">
-            <div class="feature-box feature-box-style-02 border-end-0">
-              <div class="feature-img">
-                <img src="{% static 'images/services/03.jpg' %}" alt="services03">
-              </div>
-              <div class="feature-content">
-                <h3 class="text-white">Treatments</h3>
-                <p class="mb-4 text-white">What steps are required to get you to the goals? Make the plan as detailed as possible.</p>
-                <a href="appointment.html">Make Appointment<i class="fas fa-arrow-right ms-2"></i></a>
-              </div>
-            </div>
-          </div>
+          <a href="{% url 'services' %}" class="btn btn-primary mt-4">View All Pricing</a>
         </div>
+        
+              
       </div>
+      
     </section>
     <!--=================================
-    feature-box -->
+    Features -->
     <!--=================================
     Menu list -->
     <section class="space-ptb position-relative">
@@ -412,7 +415,7 @@
           </div>
         </div>
         <div class="row">
-          <div class=" center col-sm-6 mb-4 mb-sm-0">
+          <div class=" center col-md-6">
             <div class="team">
               <div class="team-img">
                 <img class="img-fluid img-thumbnail smaller-image" src="{% static 'images/team/headshot.webp' %}" alt="">
@@ -423,7 +426,7 @@
               </div>
             </div>
           </div>
-          <div class="center col-sm-6 mb-4 mb-sm-0">
+          <div class="center col-md-6">
             <div class="team">
               <div class="team-img">
                 <img class="img-fluid img-thumbnail smaller-image" src="{% static 'images/team/02.jpg' %}" alt="">
@@ -441,7 +444,7 @@
     Team -->
     <!--=================================
     Testimonial -->
-    <section class="bg-primary">
+    <section class="bg-primary" id="reviews">
       <div class="space-ptb" style="background-image: url(./images/testimonial/testimonial-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div class="container">
           <div class="row">

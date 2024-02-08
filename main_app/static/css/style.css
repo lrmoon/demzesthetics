@@ -3,13 +3,23 @@
   width:500px;
 }
 
+#about{
+  scroll-padding-top: 300px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 /* Remove shadow outline for pagination buttons */
 #special-section{
   background-image: url(../images/bg/shop-banner.jpg) !important;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+#featuresimg{
+  background-image: url(../images/features.webp);
+   background-position: center;
+}
 #main-banner{
    background-image: url(../images/headbanner.webp) !important;
    background-size: cover; 
@@ -6987,6 +6997,9 @@ Blog Style 01
 /*****************************
   Footer
 *****************************/
+
+
+
 .footer .min-footer {
   padding: 80px 0; }
 
