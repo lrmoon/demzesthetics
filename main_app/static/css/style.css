@@ -45,7 +45,6 @@
 #logo{
   width: auto;
   height: 300px;
-  background-color: white !important;
 }
 
 #nav{
@@ -482,7 +481,7 @@ iframe {
     -webkit-transform: skew(20deg);
             transform: skew(20deg); }
 
-@media (max-width: 991px) {
+@media (max-width: 1456px) {
   .form-control {
     height: 49px; } }
 
@@ -1273,7 +1272,7 @@ hr.hr-dark {
     padding-top: 40px;
     margin-top: -40px; } }
 
-@media (max-width: 991px) {
+@media (max-width: 1456px) {
   .bmi-form .col-lg-6.half-overlay-right,
   .bmi-form .col-lg-6.half-overlay-left {
     padding: 0 30px; }
@@ -1758,7 +1757,7 @@ hr.hr-dark {
   .mx-md-n10 {
     margin-left: -12rem !important; } }
 
-@media (min-width: 992px) {
+@media (min-width: 1452px) {
   .m-lg-n1 {
     margin: -.25rem !important; }
   .mt-lg-n1,
@@ -2734,7 +2733,7 @@ button {
   .feature-box-style-05 .feature-content p {
     padding-top: 10px; }
 
-@media (max-width: 991px) {
+@media (max-width: 1456px) {
   .feature-item.feature-box-style-03 {
     margin-bottom: 30px; } }
 
@@ -2928,7 +2927,7 @@ button {
     width: 25.00%;
     padding: 15px; } }
 
-@media (max-width: 991px) {
+@media (max-width: 1456px) {
   .my-shuffle-container.columns-6 .grid-item {
     width: 33.333%;
     padding: 15px; }
@@ -3373,7 +3372,7 @@ ul.list.list-circle li i {
   .pricing-plan {
     padding: 30px 20px; } }
 
-@media (max-width: 991px) {
+@media (max-width: 1456px) {
   .pricing-plan .pricing-icon img, .pricing-plan .pricing-icon i {
     height: auto;
     width: 200px; } }
@@ -4433,7 +4432,7 @@ ul.list.list-circle li i {
 /*****************************
   Responsive
 *****************************/
-@media (min-width: 992px) {
+@media (min-width: 1452px) {
   .navbar-nav .mega-menu {
     position: static; }
   .header .navbar .dropdown-menu {
@@ -4470,7 +4469,7 @@ ul.list.list-circle li i {
   .header .navbar .dropdown-menu.megamenu {
     left: 0; }
   .header .navbar .dropdown-menu.dropdown-menu-lg {
-    min-width: 790px; }
+    min-width: 992px; }
   .header .navbar .dropdown:hover > .dropdown-menu {
     -webkit-transform: translate3d(-50%, 0, 0);
             transform: translate3d(-50%, 0, 0);
@@ -4531,7 +4530,7 @@ ul.list.list-circle li i {
   .header.default .navbar .navbar-nav .nav-item.header-search {
     display: none; } }
 
-@media (max-width: 991px) {
+@media (max-width: 1456px) {
   .header .navbar-collapse {
     position: absolute;
     top: 100%;
@@ -4648,7 +4647,7 @@ ul.list.list-circle li i {
   .header.header-transparent .main-header .menu-btn {
     display: none; } }
 
-@media (max-width: 767px) {
+@media (max-width: 1456px) {
   .navbar-expand-lg {
     min-width: 100% !important;
     left: 0; }
@@ -4657,7 +4656,7 @@ ul.list.list-circle li i {
   .header.default .navbar .navbar-toggler {
     right: 15px; } }
 
-@media (max-width: 575px) {
+@media (max-width: 1456px) {
   /* Header */
   .header .navbar .navbar-brand {
     -webkit-box-flex: 0;
@@ -4880,7 +4879,7 @@ ul.list.list-circle li i {
   .banner-02 .swiper-slide {
     padding: 230px 0px 90px; } }
 
-@media (max-width: 991px) {
+@media (max-width: 1456px) {
   /*Banner*/
   .banner-01 .swiper-slide {
     padding: 200px 0px 100px; }
@@ -5616,7 +5615,7 @@ ul.list.list-circle li i {
   .products-banner .features-section.amazing-features {
     padding: 80px 50px; } }
 
-@media (max-width: 991px) {
+@media (max-width: 1456px) {
   .contact-us-form {
     padding-left: 0px; }
   .sign-in .navbar-brand img {
@@ -6175,7 +6174,7 @@ Blog Style 01
   position: absolute;
   top: 0; }
 
-@media (max-width: 991px) {
+@media (max-width: 1456px) {
   .blog-style-01 .blog-img .blog-info h3 {
     font-size: 22px;
     line-height: 26px; } }
@@ -6918,7 +6917,7 @@ Blog Style 01
     gap: 24px;
     grid-template-columns: repeat(4, 1fr); } }
 
-@media (max-width: 991px) {
+@media (max-width: 1456px) {
   .product {
     display: grid;
     gap: 24px;
@@ -7210,11 +7209,11 @@ Blog Style 01
   .about .section-title {
     margin-right: 90px; } }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1456px) and (max-width: 1199px) {
   .header .navbar .dropdown-menu a.dropdown-item {
     min-width: 140px; } }
 
-@media (max-width: 991px) {
+@media (max-width: 1456px) {
   h1 {
     font-size: 60px; }
   h2 {
@@ -7278,7 +7277,7 @@ Blog Style 01
         background: #F3DCD4; }
   .header .navbar-collapse {
     position: absolute;
-    top: 100%;
+    top: 60%;
     z-index: 9999;
     background: #ffffff;
     width: 100%;
@@ -7405,7 +7404,7 @@ Blog Style 01
   .btn.btn-lg {
     padding: 15px 20px; } }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1456px) {
   .container {
     max-width: 96%; } }
 
