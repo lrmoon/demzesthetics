@@ -462,4 +462,28 @@ POTENZA.searchbar = function () {
     POTENZA.animatedcircletext(),
     POTENZA.qty();
   });
+  
+  //navbar collapse
+
+  function toggleNavbarCollapse() {
+    var collapseThreshold = $('.add-listing').offset().left; // Get the left offset of the "Book Now" button
+    var windowWidth = $(window).width(); // Get the current window width
+
+    if (windowWidth < collapseThreshold) {
+        $('.navbar-collapse').addClass('show'); // Show the collapsed navbar
+    } else {
+        $('.navbar-collapse').removeClass('show'); // Hide the collapsed navbar
+    }
+}
+
+// Listen for window resize events
+$(window).on('resize', function() {
+    toggleNavbarCollapse();
+});
+
+// Call the toggleNavbarCollapse function on page load
+$(document).ready(function() {
+    toggleNavbarCollapse();
+});
+  
 })(jQuery);

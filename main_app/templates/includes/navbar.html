@@ -26,9 +26,9 @@
                 <path d="M13.3333 20H66.6666" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
                </svg> 
               </a>
-            <div class="navbar-collapse collapse justify-content-end justify-content-lg-center">
+            <div class="navbar-collapse collapse justify-content-end justify-content-lg-center collapse show">
               <ul class="nav navbar-nav" id="nav">
-                <li class="nav-item dropdown ">
+                <li class="nav-item dropdown active">
                   <a class="nav-link" href="{% url 'index2' %}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="about-us.html"><span>About us</span></a></li>              
@@ -38,7 +38,7 @@
                 </li>
                 <li class="logo-center">
                   <a class="navbar-brand" href="index.html">
-                    <img class="img-fluid" src="{% static 'images/logo.svg' %}" alt="logo">
+                    <img class="img-fluid" src="{% static 'images/logoapex.svg' %}" alt="logo">
                     <img class="img-fluid sticky" src="{% static 'images/logo.svg' %}" alt="logo">
                   </a>
                 </li>
@@ -47,11 +47,15 @@
                   
                 </li>
                 <li><a class="nav-link" href="contact-us.html"><span>Contact us</span></a></li>
+                <li>
+                  
+                </li>
               </ul>
+              <div class="add-listing">
+                <a class="btn btn-primary ms-4" href="appointment.html">Book Now</a>
+              </div>
             </div>
-            <div class="add-listing">
-              <a class="btn btn-primary ms-4" href="appointment.html">Book Now</a>
-            </div>
+            
           </div>
         </nav>
       </header>
