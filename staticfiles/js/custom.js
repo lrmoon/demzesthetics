@@ -1,8 +1,21 @@
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+document.querySelector('a[href="#footer"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
+});
 /*
 
-Template: LuxurySpa - Spa & Beauty HTML Template
-Author: potenzaglobalsolutions
-Design and Developed by: potenzaglobalsolutions.com
+
 
 NOTE: This file contains all scripts for the actual Template.
 
@@ -475,7 +488,7 @@ POTENZA.searchbar = function () {
         $('.navbar-collapse').removeClass('show'); // Hide the collapsed navbar
     }
 }
-
+ // added js//
 // Listen for window resize events
 $(window).on('resize', function() {
     toggleNavbarCollapse();
