@@ -7,8 +7,11 @@ def index(request):
 def index2(request):
     return render(request, 'index.html')
 
-def team(request):
-    return render(request, './pages/team.html')
+def demi(request):
+    return render(request, './pages/team-single.html')
+
+def yaz(request):
+    return render(request, './pages/yaz.html')
 
 def services(request):
     return render(request, './pages/service.html')
