@@ -73,8 +73,14 @@ preloader -->
               <ul class="nav navbar-nav" id="nav">
                 <li class="nav-item"><a class="nav-link" href="#about"><span>About us</span></a></li>              
                 <li class="nav-item">
-                  <a class="nav-link" href="#services" >Services</a>
-                  
+                  <a class="nav-link" href="#services" >Services</a> 
+                </li>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Biographies<i class="fa-solid fa-plus"></i></a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{% url 'demi' %}"><span>Demi</span></a></li>
+                    <li class=><a class="dropdown-item" href="{% url 'yaz' %}"><span>Yaz</span></a></li>
+                  </ul>
                 </li>
                 <li class="logo-center">
                   <a class="navbar-brand" href="index.html">

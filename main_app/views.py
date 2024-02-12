@@ -8,7 +8,7 @@ def index2(request):
     return render(request, 'index.html')
 
 def demi(request):
-    return render(request, './pages/team-single.html')
+    return render(request, './pages/demi.html')
 
 def yaz(request):
     return render(request, './pages/yaz.html')
