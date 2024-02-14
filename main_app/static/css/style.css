@@ -1,3 +1,49 @@
+.pricebox{
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 18px;
+  padding: 10px 20px;
+  
+  margin-bottom: 10px;
+  line-height: 18px;
+  font-weight: 600;
+}
+.section-peel ul {
+  margin-left: 450px;
+  
+}
+ 
+.section-peel .list-group-item {
+  word-wrap: break-word;
+}
+.section-peel ul, li{
+  
+    margin: 0;
+    padding: 0;
+
+   
+}
+.section-peel li{
+ list-style: none;
+}
+  
+  
+  
+.line{
+  border-top: dotted 1px;
+  background-color: transparent;
+}
+#cycle{
+  color:#F2A68D;
+}
+#returnhome{
+padding-top: 40px;
+padding-bottom: 30px;
+}
+#returnhome1{
+padding-top: 40px;
+padding-bottom: 30px;
+}
+
 .pricing-text{
   text-wrap:balance;
 }
@@ -50,7 +96,7 @@ html {
 }
 /* Remove shadow outline for pagination buttons */
 #special-section{
-  background-image: url(../images/bg/shop-banner.jpg) !important;
+  background-color: grey !important;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -76,10 +122,7 @@ html {
 
 }
 
-#features{
-  background-image: url(../images/bg/features-bg.jpg);
-  background-position: center;
-}
+
 
 #features1{
   background-image: url(../images/bg/pattern-1.png) !important;
@@ -437,6 +480,7 @@ textarea.form-control {
   display: inline-flex;
   padding: 14px 40px; }
   .breadcrumb .breadcrumb-item {
+    font-size:large;
     padding-right: 5px;
     display: inline-block; }
     .breadcrumb .breadcrumb-item a {

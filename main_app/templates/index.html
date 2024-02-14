@@ -171,7 +171,7 @@
     <!--=================================
      Features -->
      
-    <section class="bg-dark" id="features">
+    <section class="bg-dark" >
       <div class="container-fluid">
         <div class="row">
           <div class="col-xl-6 col-lg-12" id="featuresimg">
@@ -231,14 +231,14 @@
     Features -->
     <!--=================================
     Menu list -->
-    <section class="space-ptb position-relative">
+    <section class="space-ptb position-relative pb-0" id="pricing">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-8">
             <div class="section-title text-center">
               <span class="sub-title">Menu</span>
               <h2 class="title">Demzesthetics: Your Skin Dreams Start Here</h2>
-              <p class="section-description">Discover our curated menu of rejuvenating treatments at Demzesthetics. From personalized facials to advanced skincare, experience holistic beauty that leaves you refreshed and radiant.</p>
+              <p class="section-description">Discover our curated menu of rejuvenating treatments at Demzesthetics. From personalized facials to advanced skincare, experience holistic beauty that leaves you refreshed and radiant.<br>(Starting Price)</p>
             </div>
           </div>
         </div>
@@ -260,6 +260,7 @@
                 </div>
               </div>
             </div>
+            
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
                 <img class="img-fluid" src="{% static 'images/menu/face-masks.png' %}" alt="">
@@ -279,17 +280,32 @@
             </div>
             <div class="menu-list menu-list-default">
               <div class="menu-icon">
-                <img class="img-fluid" src="{% static 'images/menu/nail-treatments.png'%}" alt="">
+                <img class="img-fluid" src="{% static 'images/menu/skincare.png' %}" alt="">
               </div>
               <div class="menu-details">
                 <div class="menu-title">
-                  <a href="#">Nail Treatments</a>
-                  <p>I coach my clients to practice</p>
+                  <a href="#">Dermaplane Facial</a>
+                  <p>The dermaplaning facial begins with a double cleanse with steam, followed by dermaplaning and a relaxing lymphatic massage with LED lighting, concluding with a mask tailored to the client's skin type. Upgrade available to include an enzyme peel for an additional $25.</p>
                 </div>
                 <div class="menu-border"></div>
                 <div class="menu-price">
-                  <span class="price-min">$50.00</span>
-                  <span>$40.00</span>
+                  <span class="price-min">$175.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="menu-list menu-list-default">
+              <div class="menu-icon">
+                <img class="img-fluid" src="{% static 'images/menu/body-massage.png' %}" alt="">
+              </div>
+              <div class="menu-details">
+                <div class="menu-title">
+                  <a href="#">Vajacial </a>
+                  <p class="pricing-text" contenteditable="true">This treatment includes an enzyme cleanse with steam, followed by extractions to remove ingrown hairs. A natural serum is applied afterward, along with high frequency treatment, concluding with a soothing hydrojelly mask. This service is most effective with minimal hair growth.
+                  </p>
+                </div>
+                <div class="menu-border"></div>
+                <div class="menu-price">
+                  <span class="price-min">$90.00</span>
                 </div>
               </div>
             </div>
@@ -299,13 +315,12 @@
               </div>
               <div class="menu-details">
                 <div class="menu-title">
-                  <a href="#">Aroma therapy</a>
-                  <p>We all carry a lot of baggage</p>
+                  <a href="#">Brazilian/Bikini Wax<br> + Vajacial</a>
+                  <p>After a full waxing session, we perform a vajacial that involves an enzyme cleanse with steam. We also perform extractions to remove ingrown hairs, followed by the application of a natural serum. The treatment concludes with a combination of high-frequency therapy and a soothing hydrojelly mask.</p>
                 </div>
                 <div class="menu-border"></div>
                 <div class="menu-price">
-                  <span class="price-min">$65.00</span>
-                  <span>$62.00</span>
+                  <span class="price-min">$135.00</span>
                 </div>
               </div>
             </div>
@@ -317,13 +332,15 @@
               </div>
               <div class="menu-details">
                 <div class="menu-title">
-                  <a href="#">Skincare Sunday</a>
-                  <p>It is truly amazing</p>
+                  <a href="#">Customized Facial</a>
+                  <p>Our customized facials begin with a thorough consultation to address your goals and concerns for the day. Each facial includes a pre-cleanse, exfoliation, extractions, and a tailored mask. Additionally, we offer advanced treatment upgrades such as microdermabrasion, dermaplaning, peels, and LED therapy during your session.
+                  </p>
                 </div>
+                
                 <div class="menu-border"></div>
+                
                 <div class="menu-price">
-                  <span class="price-min">$48.00</span>
-                  <span>$42.00</span>
+                  <span class="price-min">$150.00</span>
                 </div>
               </div>
             </div>
@@ -333,13 +350,12 @@
               </div>
               <div class="menu-details">
                 <div class="menu-title">
-                  <a href="#">Relaxation</a>
-                  <p>Figure out what you want</p>
+                  <a href="#">Hydro Express</a>
+                  <p>This treatment provides deep cleansing, exfoliation, extraction, and hydration using serums rich in antioxidants, peptides, and hyaluronic acid. These serums penetrate the skin for immediate results. The session includes extractions if necessary, followed by high-frequency therapy and a customized mask suitable for your skin type. You can upgrade to include an enzyme peel for an additional $25.</p>
                 </div>
                 <div class="menu-border"></div>
                 <div class="menu-price">
-                  <span class="price-min">$35.00</span>
-                  <span>$30.00</span>
+                  <span class="price-min">$80.00</span>
                 </div>
               </div>
             </div>
@@ -349,13 +365,12 @@
               </div>
               <div class="menu-details">
                 <div class="menu-title">
-                  <a href="#">Medical Treatments</a>
-                  <p>You will begin to realise</p>
+                  <a href="#">Hydro Deluxe</a>
+                  <p>Begins with a full face dermaplaning session. Followed by hydro dermabrasion for deep cleansing, exfoliation, extraction, and hydration using penetrating serums for immediate results. Includes extractions, a detailed relaxing lymphatic face massage, and LED light therapy.</p>
                 </div>
                 <div class="menu-border"></div>
                 <div class="menu-price">
-                  <span class="price-min">$40.00</span>
-                  <span>$35.00</span>
+                  <span class="price-min">$225.00</span>
                 </div>
               </div>
             </div>
@@ -365,33 +380,79 @@
               </div>
               <div class="menu-details">
                 <div class="menu-title">
-                  <a href="#">Face Treatments</a>
-                  <p>The Truth About Success</p>
+                  <a href="#">Microdermabrasion</a>
+                  <p>This noninvasive treatment exfoliates the skin using a diamond-tip tool to remove the top uneven outer layer and extract impurities, leaving the skin soft and glowing. Effective for treating discoloration, scarring, fine lines, and wrinkles. Upgrade available to include an enzyme peel for an additional $25, with high frequency and extractions included.</p>
                 </div>
                 <div class="menu-border"></div>
                 <div class="menu-price">
-                  <span class="price-min">$59.00</span>
-                  <span>$52.00</span>
+                  <span class="price-min">$185.00</span>
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
     </section>
     <!--=================================
     Menu list -->
+    <hr class="line">
+    <section class="section-peel">
+      <h2 class="text-center pb-2">Peel Series <i id="cycle" class="fa-solid fa-arrows-spin"></i></h2>
+      <div class="menu-border"></div>
+      <h4 class="text-center pricebox menu-price"><span class="price-min bg-dark text-white mt-3 pricebox">$515.00</span></h4>
+      <div>
+        <div class="mt-3">
+          <p class="text-center"> <strong>This is a four week commitment, see plan below.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-sm-6 mb-3 mb-md-0">
+        <div class="card mx-auto">
+          <div class="col card-body border text-center">
+            <h5 class="card-title"><strong>Week 1:</strong></h5>
+            <p class="card-text">Dermaplane facial to start with a clean canvas and best for the penetration of the peels to come in the following weeks. Sent home with a kit to prepare for the series.</p>
+          </div>
+        </div>
+        <div class="card mx-auto">
+          <a href="#">
+          <div class="col card-body border text-center">
+            <h5 class="card-title"><strong>Week 2:</strong></h5>
+            <p class="card-text">Lactic peel starts the lightning process and gently exfoliates and hydrates the skin.</p>
+          </div>
+         </a>
+        </div>
+        <div class="card mx-auto">
+          <div class="col card-body border text-center">
+            <h5 class="card-title"><strong>Week 3:</strong></h5>
+            <p class="card-text">Glycolic peel deeper penetration of the peel focusing on texture.</p>
+          </div>
+        </div>
+        <div class="card mx-auto pb-5">
+          <div class="col card-body border text-center">
+            <h5 class="card-title"><strong>Week 4:</strong></h5>
+            <p class="card-text">TCA 10% targets acnce scars, hyperpigmentation and signs of aging.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--=================================
     Shop Banner -->
-    <section class="space-ptb" id="special-section" style="background-image: url(images/bg/shop-banner.jpg); background-size: cover; background-repeat: no-repeat;">
+    <section class="space-ptb" id="special-section">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-7">
             <div class="shop-banner-title text-center">
-              <h2 class="title mb-4 text-white">Specials and Events</h2>
-              <p class="text-white">We also know those epic stories, those modern-day legends surrounding the early failures of such supremely successful folks as Michael Jordan and Bill Gates. We can look a bit further back in time to Albert Einstein or even further back to Abraham Lincoln.</p>
+              <h2 class="title mb-4 text-white">Special Offers</h2>
+              <h4 class="title mb-4 text-white">Valentine's Day: Cupid's Special <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354zM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A24 24 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a9 9 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5z"/>
+              </svg></h4>
+              <p class="text-white">Includes cherry enzyme paired w/a dark coca mask, rose eye mask, and an antioxidant lip mask followed by the aromas of coffee exfolating your hands and feet.</p>
               <div class="mt-5">
-                <a href="shop.html" class="btn btn-primary-white btn-primary">Shop Now<i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="https://demz-esthetics.square.site/s/appointments" target="__blank" class="btn btn-primary-white btn-primary">Shop Now<i class="fas fa-arrow-right ms-2"></i></a>
               </div>
             </div>
           </div>
@@ -416,23 +477,29 @@
         <div class="row">
           <div class=" center col-md-6">
             <div class="team">
+              <a href="{% url 'demi' %}">
               <div class="team-img">
                 <img class="img-fluid img-thumbnail smaller-image" id="headshot" src="{% static 'images/team/headshot.webp' %}" alt="headshot">
               </div>
               <div class="team-content" id="teamcontent">
-                <p class="team-description">Founder</p>
+              </a>
+                <p class="team-description">Founder / Lead Esthetician</p>
+              
                 <h5 class="team-name"><a href="{% url 'demi' %}">Demi Williams</a></h5>
               </div>
             </div>
+            
           </div>
           <div class="center col-md-6">
             <div class="team">
+              <a href="{% url 'yaz' %}">
               <div class="team-img">
                 <img class="img-fluid img-thumbnail smaller-image" id="headshot1" src="{% static 'images/team/02.jpg' %}" alt="placeholder">
               </div>
               <div class="team-content" id="teamcontent1">
-                <p class="team-description">CEO</p>
-                <h5 class="team-name"><a href="team-single.html">Yaz</a></h5>
+              </a>
+                <p class="team-description">Esthetician / Make-up Artist</p>
+                <h5 class="team-name"><a href="{% url 'yaz' %}">Yaz</a></h5>
               </div>
             </div>
           </div>
