@@ -1,4 +1,9 @@
-.pricebox{
+#bio_social{
+  margin-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 70px;
+}
+.pricebox {
   font-family: "Montserrat", sans-serif !important;
   font-size: 18px;
   padding: 10px 20px;
@@ -121,12 +126,13 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  background-color: rgba(40, 30, 50, 0.2) /* Adjust opacity as needed */
 }
 
 #special-section h2,
 #special-section h4 {
   color:white;
+  text-shadow: 2px 2px 20px #000000;
 }
 
 #featuresimg{
@@ -3831,6 +3837,7 @@ ul.list.list-circle li i {
 .bg-primary .testimonial .testimonial-content, .bg-primary .testimonial .testimonial-details .testimonial-name .author-name {
   color: #ffffff;
   margin-bottom: 0; }
+  
 
 .bg-primary .section-title .sub-title:before {
   background: #ffffff; }
@@ -4817,10 +4824,12 @@ ul.list.list-circle li i {
     position: absolute;
     top: 40%; }
   .banner-01 h1 {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 20px #000000; }
   .banner-01 p {
     font-size: 18px;
-    line-height: 28px; }
+    line-height: 28px;
+    text-shadow: 1px 1px 5px #000000; }
   .banner-01 .swiper-button-prev {
     left: 30px; }
   .banner-01 .swiper-button-next {
