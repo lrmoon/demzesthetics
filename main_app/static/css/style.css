@@ -27,11 +27,21 @@
 }
   
   
-  
-.line{
+
+
+
+
+
+
+.line {
+  padding-top: 50px;
+  position: relative;
   border-top: dotted 1px;
   background-color: transparent;
+  width:75%;
+  margin:auto;
 }
+
 #cycle{
   color:#F2A68D;
 }
@@ -95,11 +105,30 @@ html {
   scroll-behavior: smooth;
 }
 /* Remove shadow outline for pagination buttons */
-#special-section{
-  background-color: grey !important;
+
+
+#special-section {
+  position: relative;
+  background-image: url(../images/bg/specialbanner.webp) !important;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+#special-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+}
+
+#special-section h2,
+#special-section h4 {
+  color:white;
+}
+
 #featuresimg{
   background-image: url(../images/features.webp);
    background-position: center;
@@ -697,6 +726,7 @@ iframe {
 
 hr {
   border-top-color: rgba(255, 255, 255, 0.1); }
+
 
 hr.hr-dark {
   border-top-color: rgba(0, 0, 0, 0.1); }
