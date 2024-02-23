@@ -448,13 +448,11 @@
         <div class="row justify-content-center">
           <div class="col-lg-7">
             <div class="shop-banner-title text-center">
-              <h2 class="title mb-4 text-white">Special Offers</h2>
-              <h4 class="title mb-4 text-white">Valentine's Day: Cupid's Special <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-through-heart-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l3.103-3.104a.5.5 0 1 1 .708.708L4.5 12.207V14a.5.5 0 0 1-.146.354zM16 3.5a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182A24 24 0 0 1 5.8 12.323L8.31 9.81a1.5 1.5 0 0 0-2.122-2.122L3.657 10.22a9 9 0 0 1-1.039-1.57c-.798-1.576-.775-2.997-.213-4.093C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5z"/>
-              </svg></h4>
-              <p class="text-white">Includes cherry enzyme paired w/a dark coca mask, rose eye mask, and an antioxidant lip mask followed by the aromas of coffee exfolating your hands and feet.</p>
+              <h2 class="title mb-4 text-white">Glow Up with Us</h2>
+              <h4 class="title mb-4 text-white">Embrace Self-Care with Our Luxurious Skincare Selections</h4>
+              <p class="text-white">Explore our curated collection of luxurious essentials designed to elevate your daily rituals. From nourishing creams to revitalizing masks, indulge in transformative skincare for your inner glow.</p>
               <div class="mt-5">
-                <a href="https://demz-esthetics.square.site/s/appointments" target="__blank" class="btn btn-primary-white btn-primary">Shop Now<i class="fas fa-arrow-right ms-2"></i></a>
+                <a href="https://demzesthetics.myshopify.com/" target="__blank" class="btn btn-primary-white btn-primary">Shop Now<i class="fas fa-arrow-right ms-2"></i></a>
               </div>
             </div>
           </div>
@@ -463,6 +461,8 @@
     </section>
     <!--=================================
     Shop Banner -->
+    <!--=================================
+    
     <!--=================================
     Team -->
     <section class="space-ptb position-relative">
@@ -476,35 +476,31 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class=" center col-md-6">
+        <div class="justify-content-center row">
+         
+          <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
             <div class="team">
-              <a href="{% url 'demi' %}">
               <div class="team-img">
-                <img class="img-fluid img-thumbnail smaller-image" id="headshot" src="{% static 'images/team/headshot.webp' %}" alt="headshot">
+                <img class="img-fluid" src="{% static 'images/team/headshot.webp' %}" alt="">
               </div>
-              <div class="team-content" id="teamcontent">
-              </a>
+              <div class="team-content">
                 <p class="team-description">Founder / Lead Esthetician</p>
-              
                 <h5 class="team-name"><a href="{% url 'demi' %}">Demi Williams</a></h5>
               </div>
             </div>
-            
           </div>
-          <div class="center col-md-6">
+          <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0">
             <div class="team">
-              <a href="{% url 'yaz' %}">
               <div class="team-img">
-                <img class="img-fluid img-thumbnail smaller-image" id="headshot1" src="{% static 'images/team/test.jpeg' %}" alt="placeholder">
+                <img class="img-fluid" src="{% static 'images/team/yazheadshot.webp' %}" alt="">
               </div>
-              <div class="team-content" id="teamcontent1">
-              </a>
+              <div class="team-content">
                 <p class="team-description">Esthetician / Make-up Artist</p>
                 <h5 class="team-name"><a href="{% url 'yaz' %}">Yasmine El-Jlailati</a></h5>
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
@@ -513,7 +509,7 @@
     <!--=================================
     Testimonial -->
     <section class="bg-primary">
-      <div class="space-ptb" style="background-image: url(./images/testimonial/testimonial-bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+      <div class="space-ptb" id="reviewbanner">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
@@ -539,9 +535,7 @@
                         <h6 class="author-name">Diana Motta</h6>
                         <span class="text-primary">Relax massage</span>
                       </div>
-                      <div class="avatar">
-                        <img class="img-fluid" src="{% static 'images/testimonial/01.jpg'%}" alt="">
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -558,9 +552,7 @@
                         <h6 class="author-name">Cydney T</h6>
                         <span class="text-primary">Relax massage</span>
                       </div>
-                      <div class="avatar">
-                        <img class="img-fluid" src="{% static 'images/testimonial/02.jpg' %}" alt="">
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -577,9 +569,7 @@
                         <h6 class="author-name">Jasmine Wise</h6>
                         <span class="text-primary">Relax massage</span>
                       </div>
-                      <div class="avatar">
-                        <img class="img-fluid" src="{% static 'images/testimonial/02.jpg' %}" alt="">
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -596,9 +586,7 @@
                         <h6 class="author-name">Nat Scott</h6>
                         <span class="text-primary">Relax massage</span>
                       </div>
-                      <div class="avatar">
-                        <img class="img-fluid" src="{% static 'images/testimonial/02.jpg' %}" alt="">
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -615,9 +603,7 @@
                         <h6 class="author-name">Shayna Krammes</h6>
                         <span class="text-primary">Relax massage</span>
                       </div>
-                      <div class="avatar">
-                        <img class="img-fluid" src="{% static 'images/testimonial/02.jpg' %}" alt="">
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -634,9 +620,7 @@
                         <h6 class="author-name">Lois</h6>
                         <span class="text-primary">Relax massage</span>
                       </div>
-                      <div class="avatar">
-                        <img class="img-fluid" src="{% static 'images/testimonial/02.jpg' %}" alt="">
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -653,9 +637,7 @@
                         <h6 class="author-name">Katherine V</h6>
                         <span class="text-primary">Relax massage</span>
                       </div>
-                      <div class="avatar">
-                        <img class="img-fluid" src="{% static 'images/testimonial/04.jpg' %}" alt="">
-                      </div>
+                      
                     </div>
                   </div>
                 </div>

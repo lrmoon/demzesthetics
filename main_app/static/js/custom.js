@@ -1,9 +1,5 @@
 /*
 
-Template: LuxurySpa - Spa & Beauty HTML Template
-Author: potenzaglobalsolutions
-Design and Developed by: potenzaglobalsolutions.com
-
 NOTE: This file contains all scripts for the actual Template.
 
 */
@@ -33,6 +29,8 @@ NOTE: This file contains all scripts for the actual Template.
 [ End table content ]
 ======================================*/
 //POTENZA var
+
+
 
 (function ($) {
   "use strict";
@@ -180,6 +178,9 @@ POTENZA.isSticky = function () {
       });
     }
   }
+
+  
+
 
   /*************************
         Slick slider

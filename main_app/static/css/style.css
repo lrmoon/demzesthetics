@@ -1,3 +1,9 @@
+#reviewbanner{
+  background-image: url(../images/reviewbanner.jpg) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 #bio_social{
   margin-top: 5px;
   padding-bottom: 5px;
@@ -114,7 +120,7 @@ html {
 
 #special-section {
   position: relative;
-  background-image: url(../images/bg/specialbanner.webp) !important;
+  background-image: url(../images/bannerspecial1.webp) !important;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -126,7 +132,7 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(40, 30, 50, 0.2) /* Adjust opacity as needed */
+  /* Adjust opacity as needed */
 }
 
 #special-section h2,
