@@ -82,11 +82,20 @@ NOTE: This file contains all scripts for the actual Template.
 *************************/
 
 POTENZA.isSticky = function () {
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > 450) {
-       $('.header-sticky').addClass('is-sticky');
+  var lastScrollTop = 0;
+  $(window).scroll(function() {
+    var currentScrollTop = $(this).scrollTop();
+    if (currentScrollTop > 450) {
+      if (currentScrollTop > lastScrollTop) {
+        // Scrolling down
+        $('.header-sticky').addClass('is-sticky');
+      } else {
+        // Scrolling up
+        $('.header-sticky').removeClass('is-sticky');
+      }
+      lastScrollTop = currentScrollTop;
     } else {
-       $('.header-sticky').removeClass('is-sticky');
+      $('.header-sticky').removeClass('is-sticky');
     }
   });
 };
