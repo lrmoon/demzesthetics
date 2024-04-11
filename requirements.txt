@@ -4,6 +4,7 @@ Brotli==1.1.0
 configparser==6.0.0
 css==0.1
 cssutils==2.9.0
+dj-database-url==2.1.0
 Django==3.2.1
 django-appconf==1.0.6
 django-classy-tags==4.1.0
@@ -26,6 +27,7 @@ libsass==0.23.0
 lxml==5.1.0
 packaging==23.2
 psutil==5.9.8
+psycopg2==2.9.9
 pynliner==0.8.0
 pytz==2024.1
 rcssmin==1.1.1
