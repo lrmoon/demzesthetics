@@ -1,3 +1,8 @@
-User-agent:*
+User-agent: *
+Allow: /
+
+Sitemap: www.demzesthetics.com/sitemap.xml
+
 Disallow:/admin/
+
 Disallow:/accounts/
