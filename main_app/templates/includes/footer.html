@@ -25,11 +25,19 @@
                 <div class="footer-link">
                   <h5>Navigation</h5>
                   <ul class="list-unstyled mb-0">
+                    {% if '/biography/' in request.path %}
+                    <li><a href="{% url 'index' %}#about">About us</a></li>
+                    <li><a href="{% url 'index' %}#services">Service</a></li>
+                    <li><a href="{% url 'index' %}#pricing">Service</a></li>
+                    <li><a href="{% url 'index' %}#team">Team</a></li>
+                    <li><a href="{% url 'index' %}#contact">Contact us</a></li>
+                    {% else %}
                     <li><a href="#about">About us</a></li>
                     <li><a href="#services">Service</a></li>
                     <li><a href="#pricing">Service</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact us</a></li>
+                    {% endif %}
                   </ul>
                 </div>
               </div>

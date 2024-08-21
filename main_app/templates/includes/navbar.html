@@ -1,50 +1,7 @@
 {% load static %}
 
 
-{% if '/demi/' in request.path or '/yaz/' in request.path or '/team/' in request.path%}
 
-<div id="pre-loader">
-  <img src="{% static 'images/pre-loader/loader-01.svg' %}" alt="">
-</div> 
-<!--=================================
-preloader -->
-
-<header class="header header-transparent header-sticky">
-    <nav class="navbar navbar-static-top navbar-expand-lg">
-      <div class="container-fluid main-header position-relative">
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"><i class="fas fa-align-left"></i></button>
-        <a class="logo-left navbar-brand" href="index.html">
-          <img class="img-fluid" id="logo" src="{% static './images/logo.svg' %}" alt="logo">
-          <img class="img-fluid sticky" id="logo" src="{% static './images/logo.svg' %}" alt="logo">
-        </a>
-         <a class="btn btn-sm menu-btn" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">  
-           <svg width="40" height="80" viewBox="0 0 80 80" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.3333 60H33.3333" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-            <path d="M13.3333 40H53.3333" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-            <path d="M13.3333 20H66.6666" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
-           </svg> 
-          </a>
-        <div class="navbar-collapse collapse justify-content-end justify-content-lg-center collapse show">
-          <ul class="nav navbar-nav" id="nav">
-            
-            
-            <li class="logo-center">
-              <a class="navbar-brand" href="{% url 'index' %}">
-                <img class="img-fluid" src="{% static 'images/logoapex.svg' %}" alt="logo">
-                <img class="img-fluid sticky" src="{% static 'images/logo.svg' %}" alt="logo">
-              </a>
-            </li>
-            
-          </ul>
-          <div class="add-listing">
-            <a class="btn btn-primary ms-4" target="__blank" href="https://demz-esthetics.square.site/s/appointments">Book Now</a>
-          </div>
-        </div>
-        
-      </div>
-    </nav>
-  </header>
-{% else %}
 
 
     <div id="pre-loader">
@@ -71,9 +28,17 @@ preloader -->
               </a>
             <div class="navbar-collapse collapse justify-content-end justify-content-lg-center collapse show">
               <ul class="nav navbar-nav" id="nav">
-                <li class="nav-item"><a class="nav-link" href="#about"><span>About us</span></a></li>              
+                {% if '/biography/' in request.path %}
+                <li class="nav-item"><a class="nav-link" href="{% url 'index' %}#about"><span>About us</span></a></li> 
+                {% else %}
+                <li class="nav-item"><a class="nav-link" href="#about"><span>About us</span></a></li> 
+                {% endif %}             
                 <li class="nav-item">
-                  <a class="nav-link" href="#services" >Services</a> 
+                  {% if '/biography/' in request.path %}
+                  <a class="nav-link" href="{% url 'index' %}#services">Services</a>
+                  {% else %}
+                  <a class="nav-link" href="#services" >Services</a>
+                  {% endif %}
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{% url 'demi' %}"  aria-haspopup="true" aria-expanded="false">Biography</a>
@@ -87,12 +52,25 @@ preloader -->
                   </a>
                 </li>
                 <li class="dropdown nav-item">
+                  {% if '/biography/' in request.path %}
+                  <a class="nav-link" href="{% url "index" %}#pricing">Pricing</a>
+                  {% else %}
                   <a class="nav-link" href="#pricing">Pricing</a>
+                  {% endif%}
+                  
                 </li>
                 <li class="dropdown nav-item">
+                  {% if '/biography/' in request.path %}
+                  <a class="nav-link" href="{% url 'index' %}#reviews">Reviews</a>
+                  {% else %}
                   <a class="nav-link" href="#reviews">Reviews</a>
+                  {% endif %}
                 </li>
+                {% if '/biography/' in request.path %}
+                <li><a class="nav-link" href="{% url 'index' %}#footer"><span>Contact us</span></a></li>
+                {% else %}
                 <li><a class="nav-link" href="#footer"><span>Contact us</span></a></li>
+                {% endif %}
     
               </ul>
               <div class="add-listing">
@@ -104,6 +82,6 @@ preloader -->
         </nav>
       </header>
 
-      {% endif %}
+      
       <!--=================================
       Header -->
