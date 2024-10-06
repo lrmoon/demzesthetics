@@ -1,3 +1,9 @@
+
+.inactiveLink {
+  pointer-events: none;
+  cursor: default;
+}
+
 /*
 
 Template: LuxurySpa - Spa & Beauty HTML Template
