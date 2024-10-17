@@ -4,6 +4,13 @@
   cursor: default;
 }
 
+.navbar-collapse .nav {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 /*
 
 Template: LuxurySpa - Spa & Beauty HTML Template
